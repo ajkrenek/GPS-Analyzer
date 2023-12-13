@@ -67,7 +67,7 @@ def time_difference(time_1, time_2):
     
 
 def check_start_or_end(current_location, time_stamp):
-    if time.hour < 20 and current_location == 'home' or current_location == 'UST':
+    if time.hour < 20 and current_location == 'home' or current_location == 'start_location_2':
         variables.current_day = variables.start_time = time
         variables.end_search_time = time_stamp + timedelta(hours=2)
         variables.end_location = 'work'
